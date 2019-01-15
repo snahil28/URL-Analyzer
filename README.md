@@ -1,6 +1,7 @@
 # URL Analyzer
 Firefox extension for dynamic analysis of malware
-## Demo: https://www.youtube.com/watch?v=90uszUgppFo&feature=youtu.be
+
+Demo: https://www.youtube.com/watch?v=90uszUgppFo&feature=youtu.be
 
 ## Overview 
 URL Analyzer is a Mozilla Firefox extension, and it serves the purpose to analyze each and every URL a user is trying to access to using the browser. This extension basically analyzes URLs for malicious content, i.e. to prevent user from accidentally downloading any malicious content to his system. It checks urls in stages, if a user is trying to access a webpage, it checks if it contains some malicious link or not. If it being a download url, then it hooks the download to the Cuckoo sandbox for detonation, and gets a score, on the basis of which it alerts the user about it being malicious or not.
