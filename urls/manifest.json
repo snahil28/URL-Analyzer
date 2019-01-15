@@ -1,0 +1,24 @@
+{
+  "name": "URLAnalyzer",
+  "description": "Analyzes urls before downloading them",
+  "version": "1.0",
+  "permissions": ["downloads", "<all_urls>", "notifications", "cookies"],
+  "manifest_version": 2,
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "icons": {
+    "48": "icons/url-48.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": ["jquery-2.2.4.min.js","content.js"]
+    }
+  ],
+  "browser_action": {
+    "default_icon": "icons/url-48.png"
+  }
+}
